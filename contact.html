@@ -163,43 +163,21 @@
                     <!-- Contact Form -->
                     <div class="bg-white rounded-3xl p-8 lg:p-12 shadow-2xl shadow-blue-100 border border-gray-100 fade-in delay-200">
                         <h3 class="text-2xl font-bold text-gray-900 mb-8">Send us a Message</h3>
-                        <form class="contact-form flex flex-col gap-6">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div class="flex flex-col gap-2">
-                                    <label class="text-sm font-bold text-gray-700 ml-1">Full Name</label>
-                                    <input type="text" name="name" placeholder="John Doe" required class="p-4 rounded-xl bg-gray-50 border border-gray-100 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all">
-                                </div>
-                                <div class="flex flex-col gap-2">
-                                    <label class="text-sm font-bold text-gray-700 ml-1">Email Address</label>
-                                    <input type="email" name="email" placeholder="john@example.com" required class="p-4 rounded-xl bg-gray-50 border border-gray-100 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all">
-                                </div>
-                            </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div class="flex flex-col gap-2">
-                                    <label class="text-sm font-bold text-gray-700 ml-1">Phone Number</label>
-                                    <input type="tel" name="phone" placeholder="+91 88507 41410" required class="p-4 rounded-xl bg-gray-50 border border-gray-100 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all">
-                                </div>
-                                <div class="flex flex-col gap-2">
-                                    <label class="text-sm font-bold text-gray-700 ml-1">Service Interested In</label>
-                                    <select name="service" required class="p-4 rounded-xl bg-gray-50 border border-gray-100 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all">
-                                        <option value="">Select a service</option>
-                                        <option value="web-dev">Website Development</option>
-                                        <option value="google-ads">Google Ads Management</option>
-                                        <option value="social-media">Social Media Marketing</option>
-                                        <option value="shopify">Shopify Development</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <label class="text-sm font-bold text-gray-700 ml-1">Your Message</label>
-                                <textarea name="message" placeholder="Tell us more about your business and goals..." rows="5" required class="p-4 rounded-xl bg-gray-50 border border-gray-100 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"></textarea>
-                            </div>
-                            <button type="submit" class="bg-blue-600 text-white p-5 rounded-xl font-bold text-lg shadow-xl shadow-blue-200 hover:bg-blue-700 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-3">
-                                <i data-lucide="send" size="20"></i>
-                                Send Message
-                            </button>
-                        </form>
+                        <form
+  action="https://formspree.io/f/xwvwebbk"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
                     </div>
                 </div>
             </div>
