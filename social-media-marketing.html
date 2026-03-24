@@ -210,13 +210,76 @@
                         </div>
                     </div>
                     <div class="bg-white rounded-3xl p-8 shadow-2xl">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center text-gray-900">Request a Free SMM Strategy</h3>
-                        <form class="contact-form flex flex-col gap-4">
-                            <input type="text" name="name" placeholder="Your Name" required class="p-4 rounded-xl bg-gray-50 border border-gray-100 text-gray-900 focus:outline-none focus:ring-2 focus:ring-pink-500">
-                            <input type="email" name="email" placeholder="Email Address" required class="p-4 rounded-xl bg-gray-50 border border-gray-100 text-gray-900 focus:outline-none focus:ring-2 focus:ring-pink-500">
-                            <input type="tel" name="phone" placeholder="Phone Number" required class="p-4 rounded-xl bg-gray-50 border border-gray-100 text-gray-900 focus:outline-none focus:ring-2 focus:ring-pink-500">
-                            <textarea name="message" placeholder="Tell us about your project" rows="4" class="p-4 rounded-xl bg-gray-50 border border-gray-100 text-gray-900 focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
-                            <button type="submit" class="bg-pink-600 text-white p-4 rounded-xl font-bold shadow-lg hover:bg-pink-700 transition-all">Send Message</button>
+                        <form action="https://formspree.io/f/xwvwebbk" method="POST" class="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-xl space-y-6">
+
+                          <h2 class="text-2xl font-bold text-gray-900 text-center">
+                            Get Your Free Audit
+                          </h2>
+
+                          <!-- Name -->
+                          <input 
+                            type="text" 
+                            name="name" 
+                            placeholder="Your Name" 
+                            required
+                            class="w-full p-4 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          >
+
+                          <!-- Phone -->
+                          <input 
+                            type="tel" 
+                            name="phone" 
+                            placeholder="Phone Number (WhatsApp preferred)" 
+                            required
+                            class="w-full p-4 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          >
+
+                          <!-- Email -->
+                          <input 
+                            type="email" 
+                            name="email" 
+                            placeholder="Your Email" 
+                            required
+                            class="w-full p-4 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          >
+
+                          <!-- Service Dropdown -->
+                          <select 
+                            name="service" 
+                            required
+                            class="w-full p-4 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          >
+                            <option value="">Select Service</option>
+                            <option>Website Development</option>
+                            <option>Google Ads Management</option>
+                            <option>Social Media Marketing</option>
+                            <option>Shopify Development</option>
+                          </select>
+
+                          <!-- Message -->
+                          <textarea 
+                            name="message" 
+                            placeholder="Tell us about your business"
+                            rows="4"
+                            class="w-full p-4 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          ></textarea>
+
+                          <!-- Submit -->
+                          <button 
+                            type="submit" 
+                            class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition"
+                          >
+                            Get Free Audit
+                          </button>
+
+                          <!-- WhatsApp Option -->
+                          <a 
+                            href="https://wa.me/918850741410" 
+                            class="block text-center bg-green-500 text-white py-4 rounded-xl font-bold hover:bg-green-600 transition"
+                          >
+                            Or Chat on WhatsApp
+                          </a>
+
                         </form>
                     </div>
                 </div>
